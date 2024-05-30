@@ -1,10 +1,6 @@
 
 import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
+  ClerkProvider, SignedIn, UserButton
 } from '@clerk/nextjs'
 import './globals.css'
 export default function RootLayout({
@@ -16,9 +12,10 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body>
-          <SignedOut>
+          {/* <SignedOut>
             <SignInButton />
           </SignedOut>
+          */}
           <SignedIn>
             <UserButton />
           </SignedIn>
